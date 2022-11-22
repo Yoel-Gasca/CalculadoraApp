@@ -1,0 +1,87 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+body{
+    margin: 0;
+    background-color: #2b2d2f;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* -Diseño de estilos de la calculadora- */
+.calculadora{
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #000000;
+    padding: 15px;
+    border-radius: 31px;
+    box-shadow: 15px 10px 0px 5px #00000033;
+}
+
+/* -Estilos para los botones- */
+button{
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    border-radius: 32px;
+    font-size: 1.5em;
+    border: none;
+    background-color: #121313;
+}
+
+button:active{
+    background-color: #6c7676;
+}
+
+button:focus{
+    outline: none;
+}
+
+.col-2{
+    grid-column: span 2;
+}
+
+/* -Estilos para el display- */
+.display{
+    grid-column: 1/ -1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 20px;
+    flex-direction: column;
+    background-color: #1c5c1c;
+    border-radius: 32px;
+    text-align: right;
+    color: #000000;
+    justify-content: space-between;
+    word-break: break-all;
+    box-shadow: 0px 0px 0px 10px #52505033;
+}
+
+#valor1{
+    font-size: 1.5em;
+}
+
+#valor2{
+    font-size: 2em;
+}
+
+/* -Estilos para botones de operaciones- */
+#clean{
+    color: #a9301f;
+}
+
+#op{
+    color: #58fe58;
+}
+
+#igual{
+    background-color: #01a301;
+}
